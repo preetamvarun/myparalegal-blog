@@ -17,7 +17,12 @@ function App() {
         <img src={vectorA1} alt='a' className='h-[85px] w-[90px]' />
         <img src={vectorP} alt='a' className='h-[85px] w-[90px]' />
       </div>
-      <div className='text-white absolute right-0 bottom-0 origin-bottom-left -rotate-90 translate-x-full text-[rgba(255,255,255,0.75)]'>
+      <div
+        className='text-white absolute right-0 bottom-0 origin-bottom-left -rotate-90 translate-x-full'
+        style={{
+          fontFamily: 'Anton, sans-serif',
+          color: 'rgba(255,255,255,0.75)',
+        }}>
         <p className='text-[70px] tracking-[6.6px]'>HEAR</p>
         <p className='text-[70px] tracking-[6.6px]'>LATEST</p>
         <p className='text-[70px] tracking-[6.6px]'>TOUR</p>

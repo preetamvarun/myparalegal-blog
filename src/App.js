@@ -27,7 +27,7 @@ function App() {
           color: 'rgba(255,255,255,0.75)',
         }}>
         {dialogues.map((eachDialogue) => (
-          <Dialogue msg={eachDialogue} />
+          <Dialogue msg={eachDialogue} key={eachDialogue} />
         ))}
       </div>
     </div>

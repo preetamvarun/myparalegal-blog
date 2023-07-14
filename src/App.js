@@ -5,6 +5,9 @@ import vectorL from './Assets/vector-L.svg';
 import vectorM from './Assets/vector-M.svg';
 import vectorO from './Assets/vector-O.svg';
 import vectorP from './Assets/vector-P.svg';
+import Dialogue from './Components/Dialogue';
+
+const dialogues = ['HEAR', 'LATEST', 'TOUR', 'SEE', 'SHOP', 'PERSONAL', 'AID'];
 
 function App() {
   return (
@@ -23,14 +26,9 @@ function App() {
           fontFamily: 'Anton, sans-serif',
           color: 'rgba(255,255,255,0.75)',
         }}>
-        <p className='text-[70px] tracking-[6.6px]'>HEAR</p>
-        <p className='text-[70px] tracking-[6.6px]'>LATEST</p>
-        <p className='text-[70px] tracking-[6.6px]'>TOUR</p>
-        <p className='text-[70px] tracking-[6.6px]'>SEE</p>
-        <p className='text-[70px] tracking-[6.6px]'>SHOP</p>
-        <p className='text-[70px] tracking-[6.6px]'>WATCH</p>
-        <p className='text-[70px] tracking-[6.6px]'>PERSONAL</p>
-        <p className='text-[70px] tracking-[6.6px]'>AID</p>
+        {dialogues.map((eachDialogue) => (
+          <Dialogue msg={eachDialogue} />
+        ))}
       </div>
     </div>
   );
